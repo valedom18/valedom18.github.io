@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes de la Tierra</title>
+    
+    <!-- Leaflet CSS para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#explora" data-i18n="explora">Explora los Ecosistemas</a></li>
+            <li><a href="#seresvivos" data-i18n="seresvivos">Conoce a los Seres Vivos</a></li>
+            <li><a href="#acciones" data-i18n="acciones">Cuida tu Mundo</a></li>
+            <li><a href="#zona" data-i18n="zona">Zona Interactiva</a></li>
+            <li><a href="#blog" data-i18n="blog">Blog y Actualidad</a></li>
+            <li><a href="#contacto" data-i18n="contacto">Contacto</a></li>
+        </ul>
+        <button id="languageToggle">EN</button>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Guardianes de la Tierra</h1>
+            <p>Explora, actúa y aprende a cuidar nuestro planeta.</p>
+        </div>
+    </header>
+
+    <!-- Secciones principales -->
+    <main>
+        <section id="explora" class="section">
+            <h2>Explora los Ecosistemas</h2>
+            <p>Descubre la importancia de los diferentes ecosistemas terrestres.</p>
+        </section>
+
+        <section id="seresvivos" class="section">
+            <h2>Conoce a los Seres Vivos</h2>
+            <p>Aprende sobre la diversidad de flora y fauna que habita nuestro planeta.</p>
+        </section>
+
+        <section id="acciones" class="section">
+            <h2>Cuida tu Mundo</h2>
+            <p>Consejos y acciones que puedes tomar para proteger nuestro hogar.</p>
+        </section>
+
+        <section id="zona" class="section">
+            <h2>Zona Interactiva</h2>
+            <p>Diviértete aprendiendo a través de juegos, quizzes y videos.</p>
+        </section>
+
+        <section id="blog" class="section">
+            <h2>Blog y Actualidad</h2>
+            <p>Noticias recientes y avances en conservación ecológica.</p>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto y Comunidad</h2>
+            <p>Únete a nuestra causa, comparte tus logros y sé parte del cambio.</p>
+        </section>
+
+        <!-- NUEVO: Mapa del mundo -->
+        <section id="mapa" class="section">
+            <h2>Mapa del Mundo en Peligro</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <!-- Leaflet JavaScript para el mapa -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <!-- Script propio -->
+    <script src="script.js"></script>
+</body>
+</html>

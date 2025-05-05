@@ -1,102 +1,13 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos generales */
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f0f5f0;
-    color: #4B3621;
-}
-
-/* Barra de navegación */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #6B8E23;
-    padding: 1rem 2rem;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Botón de idioma */
-#languageToggle {
-    padding: 5px 10px;
-    background-color: #A3D9A5;
-    color: #4B3621;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#languageToggle:hover {
-    background-color: #4B3621;
-    color: #fff;
-}
-
-/* Sección Hero */
-.hero {
-    background-image: url('https://images.unsplash.com/photo-1508780709619-79562169bc64'); /* imagen de bosque */
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-content {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 2rem;
+/* Nueva clase para las imágenes de los ecosistemas y seres vivos */
+.ecosystem-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    color: #2e4600;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-
-/* Secciones */
-.section {
-    padding: 4rem 2rem;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease;
-}
-
-.section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Mapa */
-#map {
-    height: 500px;
-    width: 80%;
-    margin: 20px auto;
-    border: 3px solid #4B3621;
-    border-radius: 15px;
+/* Para ocultar el quiz */
+.hidden {
+    display: none;
 }
